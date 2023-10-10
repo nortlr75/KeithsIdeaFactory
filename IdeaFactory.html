@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Idea Factory</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+body {
+  background-color: #001E44;
+}
+
+h1 {
+  color: #FFFFFF;
+  margin-left: 40px;
+}
+h2 {
+  color: #FFFFFF;
+  ;
+}
+body {
+  color: #FFFFFF;
+  ;
+}
+</style>
+<body>
+	<header>
+		<h1>Keith's Idea Factory</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="hero">
+			<h2>Get inspired with Keith's Idea Factory</h2>
+			<img id="Keith" src="file:///C:/Users/hqlnorto/Documents/Keith.png" style="width:100px">
+			<p>Enter your idea and get a response from your favorite people.</p>
+			<form action="#" method="post">
+				<label for="idea">Enter your idea:</label>
+				<input type="text" id="idea" name="idea">
+				<img id="myImage" src="file:///C:/Users/hqlnorto/Documents/pic_bulboff.gif" style="width:100px">
+				<button id="submit" onclick="document.getElementById('myImage').src='file:///C:/Users/hqlnorto/Documents/pic_bulbon.gif'" >Submit</button>
+			</form>
+		</section>
+		
+		<section id="hero">
+			<h2>Get inspired with Idea Factory</h2>
+			<p>Enter your idea and get a response based on a list of canned responses.</p>
+			<form action="#" method="post">
+				<label for="idea">Enter your idea:</label>
+				<input type="text" id="idea" name="idea">
+				<button type="submit" id="submit">Submit</button>
+			</form>
+
+			<script>
+				const responses = [
+				  "That's a great idea!",
+				  "I'm not sure that's feasible.",
+				  "Have you considered a different approach?",
+				  "Let me think about that for a moment...",
+				  "I'm sorry, I don't understand.",
+				];
+
+				const input = document.getElementById("idea");
+				const button = document.getElementById("submit");
+
+				button.addEventListener("click", () => {
+				  const idea = input.value;
+				  const index = Math.floor(Math.random() * responses.length);
+				  const response = responses[index];
+				  alert(response);
+				});
+			</script>
+
+		</section>
+
+		<section id="features">
+			<h2>Features</h2>
+			<ul>
+				<li>Hard to use interface that will probably break</li>
+				<li>Silly responses from your favorite people</li>
+				<li>It only works on your PC</li>
+				<li>Your idea will not be stored</li>
+			</ul>
+		</section>
+
+		<section id="about">
+			<h2>About Idea Factory</h2>
+			<p>Idea Factory is a web application that allows users to enter an idea and get a response based on a list of canned responses. It was created by Lauren and designed by Liz as a gag gift for Keith's 50th birthday.</p>
+			<p>If you have any questions or comments, please contact us at NoOneIsListening@uscold.com.</p>
+		 </section>
+
+		 <section id="contact">
+		 	<h2>Contact Us</h2>
+		 	<form action="#" method="post">
+		 		<label for="name">Name:</label>
+		 		<input type="text" id="name" name="name">
+
+		 		<label for="email">Email:</label>
+		 		<input type="email" id="email" name="email">
+
+		 		<label for="message">Message:</label>
+		 		<textarea id="message" name="message"></textarea>
+
+		 		<button type="submit">Send Message</button>
+
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 		
+		 	
+
+		 	
+		 </section>
